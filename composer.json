@@ -9,7 +9,7 @@
         }
     ],
 
-    "keywords": ["mercadopago","api", "symfony2", "bundle", "tarjeta", "credito"],
+    "keywords": ["mercadopago","api", "symfony2", "bundle", "tarjeta", "credito", "pago", "payment"],
     "homepage": "https://github.com/grunch/MercadopagoBundle",
     "license": "MIT",
     "require": {
