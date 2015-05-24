@@ -9,11 +9,18 @@ namespace Grunch\MercadopagoBundle;
  */
 class Factory
 {
+	private $mp;
+
     public function __construct($client_id, $client_secret, $sandbox)
     {
         $mp = new \MP($client_id, $client_secret);
         $mp->sandbox_mode($sandbox);
 
-        return $mp;
+        $this->mp = $mp;
     }
+
+	public function getMp()
+	{
+		return $this->mp;
+	}
 }

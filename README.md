@@ -15,10 +15,13 @@ Este bundle te permite adaptar de manera rápida el api de Mercadopago a tu proy
 
 ``` yml
     "require" : {
-        "grunch/mercadopagobundle": "0.1",
+        "grunch/mercadopagobundle": "0.1.*",
     }
 ``` 
 
+``` bash
+$ php composer update 
+```
 **2** Agrega tus credenciales de mercadopago:
 
 ``` yaml
@@ -35,7 +38,7 @@ grunch_mercadopago:
 ``` php
     $bundles = array(
         // ...
-        new Grunch\MecardopagoBundle\GrunchMercadopagoBundle(),
+        new Grunch\MercadopagoBundle\GrunchMercadopagoBundle(),
     );
 ```
 
@@ -44,7 +47,12 @@ grunch_mercadopago:
 - Crea el objeto mercadopago:
 
 ``` php
-$mp = $this->get('grunch_mercadopago');
+		$mp = $this->get('grunch_mercadopago')->getMp();
+```
+- Crea un token:
+
+``` php
+		$token = $mp->get_access_token();
 ```
 - Crea las entidades con la consola :
 
