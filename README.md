@@ -51,12 +51,6 @@ $mp = $this->get('grunch_mercadopago');
 ``` bash
 $ php app/console doctrine:schema:update --force
 ```
-## Example
-
-### More example
-
-### For lazy devs
-
 ## Contributors
 
 ## Contribute
