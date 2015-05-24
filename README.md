@@ -3,13 +3,12 @@ Mecadopago bundle para Symfony2
 
 Este bundle te permite adaptar de manera rápida el api de Mercadopago a tu proyecto en Symfony.
 
-## License
+[![Latest Stable Version](https://poser.pugx.org/grunch/mercadopago-bundle/v/stable)](https://packagist.org/packages/grunch/mercadopago-bundle) [![Total Downloads](https://poser.pugx.org/grunch/mercadopago-bundle/downloads)](https://packagist.org/packages/grunch/mercadopago-bundle) [![Latest Unstable Version](https://poser.pugx.org/grunch/mercadopago-bundle/v/unstable)](https://packagist.org/packages/grunch/mercadopago-bundle)
 
-### Version 0.1
+## Licencia
+[![License](https://poser.pugx.org/grunch/mercadopago-bundle/license)](https://packagist.org/packages/grunch/mercadopago-bundle)
 
-### Things to know:
-
-## Installation
+## Instalacion
 
 **1**  Agrega en la llave `require` del composer.json
 
