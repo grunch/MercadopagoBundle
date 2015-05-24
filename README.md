@@ -66,3 +66,4 @@ $ php app/console doctrine:schema:update --force
 3. get the coding standard fixer: `wget http://cs.sensiolabs.org/get/php-cs-fixer.phar`
 4. before the PullRequest you should run the coding standard fixer with `php php-cs-fixer.phar fix -v .`
 
+
