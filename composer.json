@@ -1,5 +1,6 @@
 {
-    "name": "grunch/mercadopagobundle",
+    "name": "grunch/mercadopago-bundle",
+    "type": "symfony-bundle",
     "description": "This is a Symfony2 Bundle helps you use the mercadopago API",
     "authors": [
         {
@@ -16,9 +17,13 @@
         "symfony/framework-bundle": "~2.6",
         "mercadopago/sdk": "0.3.*"
     },
+    "require-dev": {
+        "symfony/dependency-injection": "~2.1",
+        "symfony/http-kernel": "~2.1",
+        "symfony/config": "~2.1",
+        "symfony/yaml": "~2.1"
+    },
     "autoload": {
-        "psr-0": {
-            "Grunch\\MercadopagoBundle": ""
-        }
+        "psr-4": { "Grunch\\MercadopagoBundle\\": "" }
     }
 }
