@@ -19,7 +19,18 @@ Este bundle te permite adaptar de manera rápida el api de Mercadopago a tu proy
     }
 ``` 
 
-**2** Registra el bundle en ``app/AppKernel.php``
+**2** Agrega tus credenciales de mercadopago:
+
+``` yaml
+# app/config/config.yml
+
+grunch_mercadopago:
+    client_id: xxxxxx
+    client_secret: xxxxxxx
+    sandbox: true
+```
+
+**3** Registra el bundle en ``app/AppKernel.php``
 
 ``` php
     $bundles = array(
@@ -39,16 +50,6 @@ $mp = $this->get('grunch_mercadopago');
 
 ``` bash
 $ php app/console doctrine:schema:update --force
-```
-- Agrega tus credenciales de mercadopago:
-
-``` yaml
-# app/config/config.yml
-
-grunch_mercadopago:
-    client_id: xxxxxx
-    client_secret: xxxxxxx
-    sandbox: true
 ```
 ## Example
 
