@@ -8,21 +8,28 @@ Este bundle te permite adaptar de manera rápida el api de Mercadopago a tu proy
 ## Licencia
 [![License](https://poser.pugx.org/grunch/mercadopago-bundle/license)](https://packagist.org/packages/grunch/mercadopago-bundle)
 
-## Instalacion
+## Instalación con composer
 
 **1**  Agrega en la llave `require` del composer.json
 
 ``` yml
     "require" : {
-        "grunch/mercadopagobundle": "0.1.*",
+        "grunch/mercadopago-bundle": "0.1.*",
     }
 ``` 
 
 ``` bash
-$ php composer update 
+$ composer update
 ```
-**2** Agrega tus credenciales de mercadopago:
+**2** Agrega tus credenciales de mercadopago a tu proyecto:
+### Configura tus credenciales
 
+* Obtén tu **CLIENT_ID** y **CLIENT_SECRET** en las siguientes direcciones:
+    * Venezuela: [https://www.mercadopago.com/mlv/herramientas/aplicaciones](https://www.mercadopago.com/mlv/herramientas/aplicaciones)
+    * Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
+    * Mexico: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
+    * Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
+    * Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
 ``` yaml
 # app/config/config.yml
 
@@ -53,14 +60,12 @@ grunch_mercadopago:
 ``` php
 		$token = $mp->get_access_token();
 ```
-- Crea las entidades con la consola :
+- Crea las entidades con la consola:
 
 ``` bash
 $ php app/console doctrine:schema:update --force
 ```
-## Contributors
-
-## Contribute
+## Contribuye
 
 1. fork the project
 2. clone the repo

@@ -18,11 +18,6 @@ class Payment
      *
      */
     protected $id;
-     /**
-     * @ORM\ManyToOne(targetEntity="Grunch\UserBundle\Entity\User", inversedBy="quinielas")
-     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
-     */
-    protected $user;
     /** @ORM\Column(type="integer") */
     protected $order_id = 0;
      /**
@@ -401,29 +396,6 @@ class Payment
     public function getCreatedAt()
     {
         return $this->created_at;
-    }
-
-    /**
-     * Set user
-     *
-     * @param  \Grunch\UserBundle\Entity\User $user
-     * @return Payment
-     */
-    public function setUser(\Grunch\UserBundle\Entity\User $user = null)
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \Grunch\UserBundle\Entity\User
-     */
-    public function getUser()
-    {
-        return $this->user;
     }
 
     /**
