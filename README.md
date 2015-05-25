@@ -53,11 +53,15 @@ grunch_mercadopago:
 - Crea el objeto mercadopago:
 
 ``` php
+// src/Acme/DemoBundle/Controller/DemoController.php
+
 		$mp = $this->get('grunch_mercadopago')->getMp();
 ```
 - Crea un token:
 
 ``` php
+// src/Acme/DemoBundle/Controller/DemoController.php
+
 		$token = $mp->get_access_token();
 ```
 - Crea las entidades con la consola:
