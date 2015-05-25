@@ -53,16 +53,24 @@ grunch_mercadopago:
 - Crea el objeto mercadopago:
 
 ``` php
+<?php
 // src/Acme/DemoBundle/Controller/DemoController.php
 
+namespace Acme\DemoBundle\Controller;
+
+// ...
+
+class DemoController extends Controller
+{
+
+    public function indexAction()
+    {
+		// Crea el objeto MP
 		$mp = $this->get('grunch_mercadopago')->getMp();
-```
-- Crea un token:
-
-``` php
-// src/Acme/DemoBundle/Controller/DemoController.php
-
+		// Crea un token
 		$token = $mp->get_access_token();
+	}
+}
 ```
 - Crea las entidades con la consola:
 
@@ -76,4 +84,5 @@ $ php app/console doctrine:schema:update --force
 3. get the coding standard fixer: `wget http://cs.sensiolabs.org/get/php-cs-fixer.phar`
 4. before the PullRequest you should run the coding standard fixer with `php php-cs-fixer.phar fix -v .`
 
-
+## Para más información sobre el API
+[https://developers.mercadopago.com/](https://developers.mercadopago.com/)
