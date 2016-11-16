@@ -24,7 +24,7 @@ class Ipn
      *
      */
     protected $topic = '';
-    /** @ORM\Column(type="integer") */
+    /** @ORM\Column(type="string", length=50) */
     protected $operation_id;
     /**
      * @ORM\Column(type="datetime")
